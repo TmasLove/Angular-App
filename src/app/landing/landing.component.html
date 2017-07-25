@@ -1,0 +1,33 @@
+<app-home-page></app-home-page>
+
+<div class="main-title">
+  <h2> Drinks on Demand </h2>
+  <p> Delivering the goods so the party goes on... </p>
+  <br>
+
+  <form (ngSubmit)="saveAddress()">
+    <input id="full-address-input" type="text" placeholder="Enter Address" [(ngModel)]="addressValue" name="addressValue">
+    <button (click)="clicked($event)"> Submit </button>
+  </form>
+</div>
+
+
+
+<div class="bottom-cont">
+
+  <div class="best">
+    <img>
+    <h3> <strong> Best Selection: </strong> Craft Beer and Spirits </h3>
+  </div>
+
+  <div class="fast">
+    <img>
+    <h3> Fast Delivery </h3>
+  </div>
+
+  <div class="minimum">
+    <img>
+    <h3> No Minimum! </h3>
+  </div>
+
+</div>

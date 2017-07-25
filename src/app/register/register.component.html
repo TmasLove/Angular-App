@@ -1,0 +1,64 @@
+<app-home-page></app-home-page>
+
+<div *ngIf="isLoggedOut">
+
+
+  <h2> Sign Up </h2>
+  <p> Please Sign up and Login! </p>
+
+  <p *ngIf="errorMessage" class="error">
+    {{ errorMessage }}
+  </p>
+
+  <form (ngSubmit)="doSignUp()">
+    <label for="full-name-input"> Full Name: </label>
+    <input  id="full-name-input" type="text" placeholder="Blanche Bourbon"
+        [(ngModel)]="fullNameValue" name="fullNameValue">
+    <br>
+
+    <label for="email-input"> Email: </label>
+    <input  id="email-input" type="email" placeholder="blah@example.com"
+        [(ngModel)]="emailValue" name="emailValue">
+    <br>
+
+    <label for="address-input"> Address: </label>
+    <input  id="address-input" type="text" placeholder="120 SW 8 ST"
+        [(ngModel)]="addressValue" name="addressValue">
+    <br>
+
+    <label for="username-input"> Username: </label>
+    <input  id="username-input" type="text" placeholder="@PeterGriffin"
+        [(ngModel)]="usernameValue" name="usernameValue">
+    <br>
+
+    <label for="password-input"> Password: </label>
+    <input  id="password-input" type="password" placeholder="*****"
+        [(ngModel)]="passwordValue" name="passwordValue">
+    <br>
+
+    <button> Sign Up </button>
+  </form>
+
+<br>
+
+
+  <h3> Log In </h3>
+
+  <p *ngIf="loginErrorMessage" class="error">
+    {{ loginErrorMessage }}
+  </p>
+
+  <form (ngSubmit)="doLogin()">
+    <label for="login-username-input"> Username: </label>
+    <input  id="login-username-input" type="text" placeholder="@PeterGriffin"
+        [(ngModel)]="usernameValue" name="usernameValue">
+    <br>
+
+    <label for="login-pass-input"> Password: </label>
+    <input  id="login-pass-input" type="password" placeholder="*****"
+        [(ngModel)]="loginPassword" name="loginPassword">
+    <br>
+
+    <button> Log In </button>
+  </form>
+</div>

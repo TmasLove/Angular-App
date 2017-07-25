@@ -1,0 +1,36 @@
+.main-title {
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  width: 50%;
+  position: relative;
+  left: 350px;
+  top: 100px;
+}
+
+.bottom-cont {
+  display: inline-block;
+  position: relative;
+  top: 160px;
+  left: 50px;
+}
+
+.best {
+  display: inline-block;
+  padding-right: 210px;
+
+}
+
+.fast {
+  display: inline-block;
+  padding-right: 270px;
+
+
+}
+
+.minimum {
+  display: inline-block;
+  padding-right: 170px;
+
+
+}
