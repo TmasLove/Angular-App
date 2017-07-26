@@ -4,6 +4,8 @@ import { Routes, RouterModule } from '@angular/router';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LandingComponent } from './landing/landing.component';
 import { RegisterComponent } from './register/register.component';
+import { SelectionsComponent } from './selections/selections.component';
+import { CheckoutComponent } from './checkout/checkout.component';
 
 
 const routes: Routes = [
@@ -14,6 +16,14 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'selections',
+    component: SelectionsComponent
+  },
+  {
+    path: 'checkout',
+    component: CheckoutComponent
   }
 
 ];

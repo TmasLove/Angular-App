@@ -1,0 +1,16 @@
+.liq li {
+  background-color: teal;
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  padding: 20px;
+}
+
+.hah {
+  width: 100%;
+  background-color: red;
+}
+.liq {
+  text-align: center;
+
+}

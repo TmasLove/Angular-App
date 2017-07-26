@@ -1,0 +1,143 @@
+<app-home-page></app-home-page>
+
+
+<div class="container-fluid">
+<h2> Liquor's </h2>
+
+<!--
+  <div class="whiskey">
+    <ul>
+      <p> <strong> Whiskey's </strong></p>
+      <li> Johnnie Walker (Red) </li>
+      <li> Jack Daniels </li>
+      <li> Fireball </li>
+    </ul>
+  </div>
+
+<br>
+
+  <div class="vodka">
+    <ul>
+      <p> <strong> Vodka's </strong></p>
+      <li> Absolut </li>
+      <li> Ketel One </li>
+      <li> Belvedere </li>
+    </ul>
+  </div>
+
+<br>
+
+  <div class="rum">
+    <ul>
+      <p> <strong> Rum's </strong></p>
+      <li> Bacardi Gold </li>
+      <li> Bacardi White </li>
+      <li> DonQ Cristal </li>
+    </ul>
+  </div>
+
+<br>
+
+  <div class="tequila">
+    <ul>
+      <p> <strong> Tequila's </strong></p>
+      <li> Don Julio Blanco </li>
+      <li> Camarena Silver </li>
+      <li> Patron Silver </li>
+    </ul>
+
+  </div>
+</div> -->
+
+<br>
+
+<!-- <div class="container2-fluid">
+  <h2> Beer's </h2>
+
+  <div class="ipa">
+    <p><strong> IPA's </strong></p>
+    <ul>
+      <li> Jai Alai </li>
+      <li> Lagunitas </li>
+      <li> Funky Buddha </li>
+    </ul>
+  </div>
+
+<br>
+
+  <div class="lager">
+    <p><strong> Lager's </strong></p>
+    <ul>
+      <li> Stella Artois </li>
+      <li> Heineken </li>
+      <li> Corona Extra </li>
+    </ul>
+  </div>
+
+</div> -->
+
+<div class="hah">
+  <ul *ngFor='let oneBottle of bottles' class="liq">
+    <li>
+      <p> name: {{oneBottle.name}}</p>
+      <p> size: {{oneBottle.size}}</p>
+      <p> price:{{oneBottle.price}}</p>
+     </li>
+       <li>
+       <p> name: {{oneBottle.name}}</p>
+       <p> size: {{oneBottle.size}}</p>
+       <p> price:{{oneBottle.price}}</p>
+      </li>
+      <li>
+        <p> name: {{oneBottle.name}}</p>
+        <p> size: {{oneBottle.size}}</p>
+        <p> price:{{oneBottle.price}}</p>
+       </li>
+  </ul>
+</div>
+</div>
+
+
+
+<div class="container2-fluid">
+  <h2> Beers </h2>
+  <div class="beers">
+    <ul *ngFor='let oneBeer of beers' class="liq">
+      <li>
+        <p> name: {{oneBeer.name}}</p>
+        <p> size: {{oneBeer.quantity}}</p>
+        <p> price:{{oneBeer.price}}</p>
+        <p> country:{{oneBeer.country}}</p>
+       </li>
+
+         <li>
+         <p> name: {{oneBeer.name}}</p>
+         <p> quantity: {{oneBeer.quantity}}</p>
+         <p> price:{{oneBeer.price}}</p>
+         <p> country:{{oneBeer.country}}</p>
+        </li>
+
+        <li>
+          <p> name: {{oneBeer.name}}</p>
+          <p> quantity: {{oneBeer.quantity}}</p>
+          <p> price:{{oneBeer.price}}</p>
+          <p> country:{{oneBeer.country}}</p>
+         </li>
+    </ul>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>

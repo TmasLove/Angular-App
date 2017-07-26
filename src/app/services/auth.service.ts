@@ -20,11 +20,11 @@ export class AuthService {
         'http://localhost:3000/api/signup',
         // form body information to send to backend (req.body)
         {
-          fullName: theFullName,
-          email: theEmail,
-          address: theAddress,
-          username: theUsername,
-          encryptedPassword: thePassword
+          signupFullName: theFullName,
+          signupEmail: theEmail,
+          signupAddress: theAddress,
+          signupUsername: theUsername,
+          signupPassword: thePassword
         },
           { withCredentials: true }
       )
