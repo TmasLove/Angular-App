@@ -1,6 +1,6 @@
 <app-home-page></app-home-page>
 
-<div *ngIf="isLoggedOut">
+<div class="signup-container" *ngIf="isLoggedOut">
 
 
   <h2> Sign Up </h2>
@@ -12,7 +12,7 @@
 
   <form (ngSubmit)="doSignUp()">
     <label for="full-name-input"> Full Name: </label>
-    <input  id="full-name-input" type="text" placeholder="Blanche Bourbon"
+    <input  id="full-name-input" type="text" placeholder="Stewie Griffin"
         [(ngModel)]="fullNameValue" name="fullNameValue">
     <br>
 
@@ -37,28 +37,9 @@
     <br>
 
     <button> Sign Up </button>
-  </form>
 
-<br>
-
-
-  <h3> Log In </h3>
-
-  <p *ngIf="loginErrorMessage" class="error">
-    {{ loginErrorMessage }}
-  </p>
-
-  <form (ngSubmit)="doLogin()">
-    <label for="login-username-input"> Username: </label>
-    <input  id="login-username-input" type="text" placeholder="@PeterGriffin"
-        [(ngModel)]="usernameValue" name="usernameValue">
-    <br>
-
-    <label for="login-pass-input"> Password: </label>
-    <input  id="login-pass-input" type="password" placeholder="*****"
-        [(ngModel)]="loginPassword" name="loginPassword">
-    <br>
-
-    <button> Log In </button>
+  <br>
+    <p>Already a member?</p>
+    <a [routerLink]="['/login']">Log In</a>
   </form>
 </div>

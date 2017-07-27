@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Http } from '@angular/http';
-import 'rxjs/add/operator/toPromise'
+import 'rxjs/add/operator/toPromise';
+import { environment } from '../../environments/environment';
+import 'rxjs/add/operator/map'
+
 
 @Injectable()
 export class AuthService {
@@ -17,7 +20,7 @@ export class AuthService {
   signup(theFullName, theEmail, theAddress, theUsername, thePassword  ) {
     return this.httpThing
       .post(
-        'http://localhost:3000/api/signup',
+        environment.apiBase + '/api/signup',
         // form body information to send to backend (req.body)
         {
           signupFullName: theFullName,
@@ -36,9 +39,10 @@ export class AuthService {
 
  // POST login
   login(theUsername, thePassword) {
+    console.log("Service");
     return this.httpThing
       .post(
-        'http://localhost:3000/api/login',
+        environment.apiBase + '/api/login',
         {
           username: theUsername,
           password: thePassword
@@ -46,16 +50,20 @@ export class AuthService {
         { withCredentials: true }
       )
       .toPromise()
-      .then(res => res.json())
+      .then((res) => {
+        console.log(res.json());
+        return res.json();
+      })
   }
 
 //------------------------
 
  // POST logout
   logout() {
+
     return this.httpThing
       .post(
-        'http://localhost:3000/api/logout',
+        environment.apiBase + '/api/logout',
         {},
         { withCredentials: true }
       )
@@ -66,14 +74,20 @@ export class AuthService {
 //------------------------
 
  // GET checklogin
-  checklogin() {
-    return this.httpThing
-      .get(
-        'http://localhost:3000/api/checklogin',
-        { withCredentials: true }
-      )
-      .toPromise()
-      .then(res => res.json());
-  }
 
+  checkLogin() {
+        return this.httpThing
+          .get(
+            environment.apiBase + '/api/checklogin',
+
+            // Send the cookies across domains
+            { withCredentials: true }
+          )
+
+          // Convert from observable to promise
+          .toPromise()
+
+          // Parse the JSON
+          .then(res => res.json());
+    } // close checklogin()
 }

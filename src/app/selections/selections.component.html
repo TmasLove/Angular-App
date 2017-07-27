@@ -2,142 +2,78 @@
 
 
 <div class="container-fluid">
-<h2> Liquor's </h2>
 
-<!--
-  <div class="whiskey">
+  <button (click)="checkOut()">Check Out</button>
+
+  <h2> Liquor's </h2>
+
+  <div class="hah">
     <ul>
-      <p> <strong> Whiskey's </strong></p>
-      <li> Johnnie Walker (Red) </li>
-      <li> Jack Daniels </li>
-      <li> Fireball </li>
-    </ul>
-  </div>
+      <h3> Vodka's </h3>
+      <li *ngFor='let oneBottle of vodkaArray' class="liq">
+        <!-- <img src="{{oneBottle.image}}"> -->
+        <p>       {{oneBottle.name}}</p>
+        <p>       {{oneBottle.size}}</p>
+        <p> $     {{oneBottle.price}}</p>
+  <button class="add-to-cart" (click)="addToCart(oneBottle._id)">Add To Cart</button>
+    </li>
 
-<br>
-
-  <div class="vodka">
-    <ul>
-      <p> <strong> Vodka's </strong></p>
-      <li> Absolut </li>
-      <li> Ketel One </li>
-      <li> Belvedere </li>
-    </ul>
-  </div>
-
-<br>
-
-  <div class="rum">
-    <ul>
-      <p> <strong> Rum's </strong></p>
-      <li> Bacardi Gold </li>
-      <li> Bacardi White </li>
-      <li> DonQ Cristal </li>
-    </ul>
-  </div>
-
-<br>
-
-  <div class="tequila">
-    <ul>
-      <p> <strong> Tequila's </strong></p>
-      <li> Don Julio Blanco </li>
-      <li> Camarena Silver </li>
-      <li> Patron Silver </li>
-    </ul>
-
-  </div>
-</div> -->
-
-<br>
-
-<!-- <div class="container2-fluid">
-  <h2> Beer's </h2>
-
-  <div class="ipa">
-    <p><strong> IPA's </strong></p>
-    <ul>
-      <li> Jai Alai </li>
-      <li> Lagunitas </li>
-      <li> Funky Buddha </li>
-    </ul>
-  </div>
-
-<br>
-
-  <div class="lager">
-    <p><strong> Lager's </strong></p>
-    <ul>
-      <li> Stella Artois </li>
-      <li> Heineken </li>
-      <li> Corona Extra </li>
-    </ul>
-  </div>
-
-</div> -->
-
-<div class="hah">
-  <ul *ngFor='let oneBottle of bottles' class="liq">
-    <li>
-      <p> name: {{oneBottle.name}}</p>
-      <p> size: {{oneBottle.size}}</p>
-      <p> price:{{oneBottle.price}}</p>
-     </li>
-       <li>
-       <p> name: {{oneBottle.name}}</p>
-       <p> size: {{oneBottle.size}}</p>
-       <p> price:{{oneBottle.price}}</p>
+      <h3> Whiskey's </h3>
+      <li *ngFor='let oneBottle of whiskeyArray' class="liq">
+        <!-- <img src="{{oneBottle.image}}"> -->
+        <p>       {{oneBottle.name}}</p>
+        <p>       {{oneBottle.size}}</p>
+        <p> $     {{oneBottle.price}}</p>
+        <button class="add-to-cart" (click)="addToCart(oneBottle)">Add To Cart</button>
       </li>
-      <li>
-        <p> name: {{oneBottle.name}}</p>
-        <p> size: {{oneBottle.size}}</p>
-        <p> price:{{oneBottle.price}}</p>
-       </li>
-  </ul>
-</div>
+
+
+      <h3> Rum's </h3>
+      <li *ngFor='let oneBottle of rumArray' class="liq" >
+        <!-- <img src="assets/{{oneBottle.image}}"> -->
+        <p>       {{oneBottle.name}}</p>
+        <p>       {{oneBottle.size}}</p>
+        <p> $     {{oneBottle.price}}</p>
+        <button class="add-to-cart" (click)="addToCart(oneBottle)">Add To Cart</button>
+      </li>
+
+
+      <h3> Tequila's </h3>
+      <li *ngFor='let oneBottle of tequilaArray' class="liq" >
+        <!-- <img src="{{oneBottle.image}}"> -->
+        <p>       {{oneBottle.name}}</p>
+        <p>       {{oneBottle.size}}</p>
+        <p> $     {{oneBottle.price}}</p>
+        <button class="add-to-cart" (click)="addToCart(oneBottle)">Add To Cart</button>
+      </li>
+    </ul>
+  </div>
 </div>
 
 
 
 <div class="container2-fluid">
   <h2> Beers </h2>
-  <div class="beers">
-    <ul *ngFor='let oneBeer of beers' class="liq">
-      <li>
-        <p> name: {{oneBeer.name}}</p>
-        <p> size: {{oneBeer.quantity}}</p>
-        <p> price:{{oneBeer.price}}</p>
-        <p> country:{{oneBeer.country}}</p>
-       </li>
+  <div class="hah">
+    <ul>
+      <h3> IPA's </h3>
+      <li *ngFor='let oneBeer of ipaArray' class="liq">
+        <!-- <img src="{{oneBeer.image}}"> -->
+        <p>           {{oneBeer.name}} </p>
+        <p>           {{oneBeer.quantity}} Beers</p>
+        <p> $         {{oneBeer.price}} </p>
+        <p> Brewed in {{oneBeer.country}} </p>
+        <button class="add-to-cart" (click)="addToCart(oneBeer)">Add To Cart</button></li>
 
-         <li>
-         <p> name: {{oneBeer.name}}</p>
-         <p> quantity: {{oneBeer.quantity}}</p>
-         <p> price:{{oneBeer.price}}</p>
-         <p> country:{{oneBeer.country}}</p>
-        </li>
-
-        <li>
-          <p> name: {{oneBeer.name}}</p>
-          <p> quantity: {{oneBeer.quantity}}</p>
-          <p> price:{{oneBeer.price}}</p>
-          <p> country:{{oneBeer.country}}</p>
-         </li>
+      <h3> Lager's </h3>
+      <li *ngFor='let oneBeer of lagerArray' class="liq">
+        <!-- <img src="{{oneBeer.image}}"> -->
+        <p>           {{oneBeer.name}}</p>
+        <p>           {{oneBeer.quantity}} Beers</p>
+        <p> $         {{oneBeer.price}}</p>
+        <p> Brewed in {{oneBeer.country}}</p>
+        <button class="add-to-cart" (click)="addToCart(oneBeer)">Add To Cart</button></li>
     </ul>
   </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>

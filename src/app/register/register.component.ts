@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { AuthService } from '../services/auth.service';
+
 
 @Component({
   selector: 'register-component',
@@ -21,10 +21,7 @@ export class RegisterComponent implements OnInit {
 
   signupErrorMessage: string;
 
-  loginUsername: string;
-  loginPassword: string;
 
-  loginErrorMessage: string;
 
 
    constructor(
@@ -34,8 +31,8 @@ export class RegisterComponent implements OnInit {
 
 
     ngOnInit() {
-      this.auth.checklogin()
-      .then((userFromApi) => {
+      this.auth.checkLogin()
+      .then((userFromDb) => {
         this.routerThing.navigate(['/'])
       })
       .catch(() => {
@@ -70,12 +67,7 @@ export class RegisterComponent implements OnInit {
             this.usernameValue = "";
             this.passwordValue = "";
             this.signupErrorMessage = "";
-              console.log('this.fullNameValue')
-              console.log('this.emailValue')
-              console.log('this.addressValue')
-              console.log('this.usernameValue')
-              console.log('this.passwordValue')
-              console.log('this.signupErrorMessage')
+
 
            this.routerThing.navigate(['/'])
           })
@@ -85,30 +77,5 @@ export class RegisterComponent implements OnInit {
           });
     }
 
-   // LOG IN
-
-   doLogin() {
-      this.auth.login(this.loginUsername, this.loginPassword)
-      .then((resultsFromApi) => {
-        this.loginUsername = "";
-        this.loginPassword = "";
-        this.loginErrorMessage = "";
-
-       this.isLoggedOut = false;
-
-       this.routerThing.navigate(['/'])
-      })
-      // alert('login submitted');
-      .catch((err) => {
-        const parsedError = err.json();
-        this.loginErrorMessage = parsedError.message
-      });
-    }
-
-
-
-    closeModal() {
-        document.getElementById('modal').style.display = "none";
-    }
 
 }

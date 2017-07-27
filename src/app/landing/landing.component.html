@@ -6,8 +6,7 @@
   <br>
 
   <form (ngSubmit)="saveAddress()">
-    <input id="full-address-input" type="text" placeholder="Enter Address" [(ngModel)]="addressValue" name="addressValue">
-    <button (click)="clicked($event)"> Submit </button>
+    <button [routerLink]="['/register']"> Get Saucy </button>
   </form>
 </div>
 

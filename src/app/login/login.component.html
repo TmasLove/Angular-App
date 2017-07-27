@@ -1,0 +1,23 @@
+<app-home-page></app-home-page>
+
+<div class="login-container">
+<h3> Log In </h3>
+
+<p *ngIf="loginErrorMessage" class="error">
+  {{ loginErrorMessage }}
+</p>
+
+<form (ngSubmit)="doLogin()">
+  <label for="login-username-input"> Username: </label>
+  <input  id="login-username-input" type="text" placeholder="@PeterGriffin"
+      [(ngModel)]="loginUsername" name="usernameValue">
+  <br>
+
+  <label for="login-pass-input"> Password: </label>
+  <input  id="login-pass-input" type="password" placeholder="*****"
+      [(ngModel)]="loginPassword" name="loginPassword">
+  <br>
+
+  <button class="login"> Log In </button>
+</form>
+</div>

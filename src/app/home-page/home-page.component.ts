@@ -8,8 +8,11 @@ import { Modal } from 'angular2-modal/plugins/bootstrap';
   templateUrl: './home-page.component.html',
   styleUrls: ['./home-page.component.css'],
 })
+
 export class HomePageComponent implements OnInit {
 
+  isLoggedOut: boolean = false;
+  currentUser: any = {};
 
 
    constructor(
@@ -18,16 +21,14 @@ export class HomePageComponent implements OnInit {
     ) { }
 
    ngOnInit() {
+     this.auth.checkLogin()
+      .then((userFromDb) => {
+        if (userFromDb) this.currentUser = userFromDb;
+        else this.routerThing.navigate(['selections'])
+      .catch((err) => {
+      });
 
+   });
 
-   }
-
-
-
-
-
-    closeModal() {
-        document.getElementById('modal').style.display = "none";
-    }
-
+ }
 }

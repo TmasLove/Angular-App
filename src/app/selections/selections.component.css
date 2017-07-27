@@ -1,16 +1,25 @@
-.liq li {
+.liq {
   background-color: teal;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: flex-end;
   display: inline-block;
   text-align: center;
   width: 30%;
   padding: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .hah {
+  flex-flow: row wrap;
+  align-content: flex-end;
   width: 100%;
-  background-color: red;
+  background-color: lightblue;
 }
-.liq {
-  text-align: center;
 
+.liq {
+  flex-flow: row wrap;
+  align-content: flex-end;
+  text-align: center;
 }
