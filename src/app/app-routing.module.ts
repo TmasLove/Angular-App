@@ -8,7 +8,7 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { SelectionsComponent } from './selections/selections.component';
 import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
+import { OrderCompleteComponent } from './order-complete/order-complete.component';
 
 
 const routes: Routes = [
@@ -31,8 +31,8 @@ const routes: Routes = [
   },
 
   {
-    path: 'checkout',
-    component: CheckoutComponent
+    path: 'order-complete',
+    component: OrderCompleteComponent
   },
   {
     path: 'login',

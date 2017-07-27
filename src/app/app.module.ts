@@ -16,7 +16,7 @@ import { SelectionsComponent } from './selections/selections.component';
 import {AccordionModule} from 'primeng/primeng';
 import {MenuItem} from 'primeng/primeng';
 import { CartComponent } from './cart/cart.component';
-import { CheckoutComponent } from './checkout/checkout.component';
+import { OrderCompleteComponent } from './order-complete/order-complete.component';
 
 
 
@@ -31,7 +31,7 @@ import { CheckoutComponent } from './checkout/checkout.component';
     LoginComponent,
     SelectionsComponent,
     CartComponent,
-    CheckoutComponent,
+    OrderCompleteComponent,
   ],
   imports: [
     BrowserModule,

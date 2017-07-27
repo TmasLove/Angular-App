@@ -1,10 +1,10 @@
 <app-home-page></app-home-page>
 
-<h2> Your cart </h2>
 
-<hr>
 
 <div class="cart-container">
+  <h2> My Cart </h2>
+  <hr>
   <ul>
     <li *ngFor="let oneBottle of bottles">
       <p> {{oneBottle.name}} </p>
@@ -12,7 +12,6 @@
       <p> {{oneBottle.size}} </p>
     </li>
   </ul>
-  <button (click)="showSomething()">show</button>
+  <hr>
+  <button [routerLink]="['/order-complete']" (click)="deliverMyShit()">Deliver NOW!</button>
 </div>
-
-<!-- <button [routerLink]="['/checkout']"> Checkout </button> -->
