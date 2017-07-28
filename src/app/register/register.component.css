@@ -1,12 +1,19 @@
 .signup-container {
   border: 1px solid black;
   width: 400px;
-  height: 500px;
+  height: 520px;
   text-align: center;
   position: relative;
-  left: 200px;
+  left: 500px;
   padding-top: 20px;
   top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+}
+
+input.input {
+  color: black;
 }
 
 form {
@@ -15,4 +22,24 @@ form {
 
 label {
   padding-top: 30px;
+}
+
+.background {
+  background-image: url('../../assets/images/pour.jpg');
+  background-size: cover;
+  height: 50vw;
+}
+
+button.signup {
+  color: white;
+  background-color: black;
+  margin-bottom: 10px;
+  position: relative;
+  top: 8px;
+}
+
+button.signup:hover {
+  background-color: white;
+  color: black;
+
 }

@@ -1,6 +1,12 @@
 <app-home-page></app-home-page>
 
+
+
+
+<section class="background">
+
 <div class="login-container">
+  <br>
 <h3> Log In </h3>
 
 <p *ngIf="loginErrorMessage" class="error">
@@ -8,16 +14,19 @@
 </p>
 
 <form (ngSubmit)="doLogin()">
-  <label for="login-username-input"> Username: </label>
-  <input  id="login-username-input" type="text" placeholder="@PeterGriffin"
+  <label for="login-username-input"> Username : </label>
+  <input class="input"  id="login-username-input" type="text" placeholder="@PeterGriffin"
       [(ngModel)]="loginUsername" name="usernameValue">
   <br>
+  <br>
 
-  <label for="login-pass-input"> Password: </label>
-  <input  id="login-pass-input" type="password" placeholder="*****"
+  <label for="login-pass-input"> Password : </label>
+  <input class="input" id="login-pass-input" type="password" placeholder="*****"
       [(ngModel)]="loginPassword" name="loginPassword">
   <br>
 
   <button class="login"> Log In </button>
 </form>
 </div>
+
+</section>

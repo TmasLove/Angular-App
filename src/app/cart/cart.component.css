@@ -1,7 +1,53 @@
 .cart-container {
   border: 1px solid black;
   height: 750px;
-  width: 250px;
+  width: 280px;
   position: relative;
-  left: 50px;
+  left: 100px;
+  top: 80px;
+  color: #B6B11A;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.65);
+}
+
+.cart-back {
+  background-image: url('../../assets/images/brews.jpg');
+  background-size: cover;
+
+}
+
+button.deliver {
+  background-color: black;
+}
+
+button.deliver:hover {
+  background-color: #B6B11A;
+  color: black;
+}
+
+p {
+  color: #B6B11A;
+}
+
+.inst {
+  height: 250px;
+  width: 400px;
+  border: 1px solid black;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #B6B11A;
+  text-align: center;
+  position: relative;
+  left: 700px;
+  bottom: 500px;
+
+}
+
+li.cart {
+  list-style: none;
+}
+
+hr {
+  width: 100px;
 }

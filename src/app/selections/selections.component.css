@@ -1,5 +1,6 @@
 .liq {
-  background-color: teal;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
   display: flex;
   flex-flow: row wrap;
   align-content: flex-end;
@@ -15,11 +16,73 @@
   flex-flow: row wrap;
   align-content: flex-end;
   width: 100%;
-  background-color: lightblue;
+  background-size: cover;
+  color: white;
+  padding-bottom: 10px;
+}
+
+.container-fluid {
+  background-image: url('../../assets/images/selection.jpg');
+  background-size: cover;
+  color: white;
+}
+
+hr {
+  width: 300px;
+}
+
+h2.title {
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.container2-fluid {
+  background-image: url('../../assets/images/beer-pour.jpg');
+  background-size: cover;
+  color: white;
 }
 
 .liq {
   flex-flow: row wrap;
   align-content: flex-end;
   text-align: center;
+}
+
+button.add-to-cart {
+  background-color: rgb(84, 165, 246);
+}
+
+button.add-to-cart:hover {
+  background-color: white;
+  color: rgb(84, 165, 246);
+}
+
+.check-cont {
+  border: 1px solid white;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 120px;
+  float: right;
+  margin-top: 10px;
+  text-align: center;
+}
+
+button.btn-out {
+  background-color: black;
+  text-align: center;
+}
+
+button.btn-out:hover {
+  background-color: rgb(84, 165, 246);
+  color: black;
+}
+
+hr.cnt {
+width: 50px;
+}
+
+body.back-body {
+  background-image: url('../../assets/images/photo.jpg');
+  background-image: cover;
 }

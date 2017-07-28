@@ -1,11 +1,21 @@
 .login-container {
   border: 1px solid black;
-  width: 300px;
-  height: 250px;
+  width: 500px;
+  height: 300px;
+  text-align: center;
   position: relative;
-  left: 100px;
+  left: 425px;
   padding-left: 15px;
   padding-top: 20px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 10px;
+  top: 168px;
+}
+
+input.input {
+  color: black;
 }
 
 form {
@@ -17,7 +27,20 @@ label {
 }
 
 button.login {
-  position: relative;
-  left: 100px;
+  text-align: center;
   top: 20px;
+  position: relative;
+  background-color: black;
+  color: white;
+}
+
+button.login:hover {
+  background-color: white;
+  color: black;
+}
+
+.background {
+  background-image: url('../../assets/images/pour.jpg');
+  background-size: cover;
+  height: 50vw;
 }

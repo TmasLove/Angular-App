@@ -1,17 +1,34 @@
 <app-home-page></app-home-page>
 
 
+<section class="cart-back">
+  <div class="cart-container">
+    <h2> My Cart </h2>
+    <hr>
+    <ul>
+      <li class="cart" *ngFor="let oneBottle of bottles">
+        <h4> {{oneBottle.name}} </h4>
+        <h5> $: {{oneBottle.price}}.00</h5>
+        <br>
+      </li>
+    </ul>
+    <hr>
+  <br>
+  <br>
 
-<div class="cart-container">
-  <h2> My Cart </h2>
-  <hr>
-  <ul>
-    <li *ngFor="let oneBottle of bottles">
-      <p> {{oneBottle.name}} </p>
-      <p> {{oneBottle.price}} </p>
-      <p> {{oneBottle.size}} </p>
-    </li>
-  </ul>
-  <hr>
-  <button [routerLink]="['/order-complete']" (click)="deliverMyShit()">Deliver NOW!</button>
+    <button class="deliver" [routerLink]="['/order-complete']">Deliver NOW!</button>
 </div>
+
+<div class="inst">
+  <h2> My Cart Instructions </h2>
+  <hr>
+<ol>
+  <li> Double check your order is correct! </li>
+  <br>
+  <li> Click 'Deliver' once you're satisfied </li>
+  <br>
+  <li> <strong> All Sales are FINAL! </strong></li>
+</ol>
+</div>
+
+</section>

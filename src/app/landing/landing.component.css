@@ -2,10 +2,31 @@
   border: 1px solid black;
   padding: 20px;
   text-align: center;
-  width: 50%;
+  width: 418px;;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.8);
   position: relative;
-  left: 350px;
-  top: 100px;
+  top: 72px;
+  color: white;
+  border-radius: 1100px;
+  padding: 80px;
+}
+
+.main-back {
+  background-image: url('../../assets/images/delivery.png');
+  background-size: cover;
+  height: 550px;
+}
+
+button.saucy {
+  background-color: black;
+  color: white;
+}
+
+button.saucy:hover {
+  background-color: white;
+  color: black;
+
 }
 
 .bottom-cont {
@@ -17,20 +38,84 @@
 
 .best {
   display: inline-block;
-  padding-right: 210px;
+  width: 33%;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  text-align: center;
+  left: 70px;
 
 }
 
 .fast {
   display: inline-block;
-  padding-right: 270px;
-
+  width: 33%;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  text-align: center;
+  left: 100px;
 
 }
 
 .minimum {
   display: inline-block;
-  padding-right: 170px;
+  width: 33%;
+  border: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: relative;
+  text-align: center;
+  left:150px;
 
+}
 
+.deets {
+  width: 100vw;
+  height: 40vw;
+}
+
+hr {
+  width: 300px;
+}
+
+.contact-us {
+  width: 420px;
+  height: 450px;
+  border: 1px solid rebeccapurple;
+  text-align: center;
+  padding-top: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  position: relative;
+  left: 430px;
+  top: 50px;
+  border-radius: 20px;
+
+}
+
+.contact-back {
+  background-image: url('../../assets/images/contactus.jpg');
+  background-size: cover;
+  width: 100vw;
+  height: 40vw;
+}
+
+button.cont-btn {
+  background-color: black;
+  color: white;
+}
+
+button.cont-btn:hover {
+  background-color: rebeccapurple;
+  color: white;
+}
+
+img.icons {
+  width: 250px;
+  height: 200px;
+}
+
+.deets {
+  background-image: url('../../assets/images/white.png');
+  background-size: cover;
 }

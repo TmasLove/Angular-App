@@ -1,9 +1,12 @@
 <app-home-page></app-home-page>
 
+<section class="background">
+
 <div class="signup-container" *ngIf="isLoggedOut">
 
 
   <h2> Sign Up </h2>
+  <br>
   <p> Please Sign up and Login! </p>
 
   <p *ngIf="errorMessage" class="error">
@@ -11,35 +14,37 @@
   </p>
 
   <form (ngSubmit)="doSignUp()">
-    <label for="full-name-input"> Full Name: </label>
-    <input  id="full-name-input" type="text" placeholder="Stewie Griffin"
+    <label for="full-name-input"> Full Name : </label>
+    <input class="input" id="full-name-input" type="text" placeholder="Stewie Griffin"
         [(ngModel)]="fullNameValue" name="fullNameValue">
     <br>
 
-    <label for="email-input"> Email: </label>
-    <input  id="email-input" type="email" placeholder="blah@example.com"
+    <label for="email-input"> Email : </label>
+    <input class="input" id="email-input" type="email" placeholder="blah@example.com"
         [(ngModel)]="emailValue" name="emailValue">
     <br>
 
-    <label for="address-input"> Address: </label>
-    <input  id="address-input" type="text" placeholder="120 SW 8 ST"
+    <label for="address-input"> Address : </label>
+    <input class="input" id="address-input" type="text" placeholder="120 SW 8 ST"
         [(ngModel)]="addressValue" name="addressValue">
     <br>
 
-    <label for="username-input"> Username: </label>
-    <input  id="username-input" type="text" placeholder="@PeterGriffin"
+    <label for="username-input"> Username : </label>
+    <input class="input" id="username-input" type="text" placeholder="@PeterGriffin"
         [(ngModel)]="usernameValue" name="usernameValue">
     <br>
 
-    <label for="password-input"> Password: </label>
-    <input  id="password-input" type="password" placeholder="*****"
+    <label for="password-input"> Password : </label>
+    <input class="input" id="password-input" type="password" placeholder="*****"
         [(ngModel)]="passwordValue" name="passwordValue">
     <br>
 
-    <button> Sign Up </button>
+    <button class="signup"> Sign Up </button>
 
   <br>
+
     <p>Already a member?</p>
     <a [routerLink]="['/login']">Log In</a>
   </form>
 </div>
+</section>

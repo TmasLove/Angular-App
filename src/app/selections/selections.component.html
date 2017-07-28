@@ -1,15 +1,20 @@
 <app-home-page></app-home-page>
 
 
-<div class="container-fluid">
+<section class="container-fluid">
 
-  <button (click)="checkOut()">Check Out</button>
+  <div class="check-cont">
+    <h4> Ready? </h4>
+    <hr class="cnt">
+  <button class="btn-out" (click)="checkOut()">Check Out</button>
+  </div>
 
-  <h2> Liquor's </h2>
+  <h2 class="title"> Liquor's </h2>
+  <hr>
 
   <div class="hah">
     <ul>
-      <h3> Vodka's </h3>
+      <h3 class="title"> Vodka's </h3>
       <li *ngFor='let oneBottle of vodkaArray' class="liq">
         <!-- <img src="{{oneBottle.image}}"> -->
         <p>       {{oneBottle.name}}</p>
@@ -18,7 +23,7 @@
   <button class="add-to-cart" (click)="addToCart(oneBottle._id)">Add To Cart</button>
     </li>
 
-      <h3> Whiskey's </h3>
+      <h3 class="title"> Whiskey's </h3>
       <li *ngFor='let oneBottle of whiskeyArray' class="liq">
         <!-- <img src="{{oneBottle.image}}"> -->
         <p>       {{oneBottle.name}}</p>
@@ -28,7 +33,7 @@
       </li>
 
 
-      <h3> Rum's </h3>
+      <h3 class="title"> Rum's </h3>
       <li *ngFor='let oneBottle of rumArray' class="liq" >
         <!-- <img src="assets/{{oneBottle.image}}"> -->
         <p>       {{oneBottle.name}}</p>
@@ -38,7 +43,7 @@
       </li>
 
 
-      <h3> Tequila's </h3>
+      <h3 class="title"> Tequila's </h3>
       <li *ngFor='let oneBottle of tequilaArray' class="liq" >
         <!-- <img src="{{oneBottle.image}}"> -->
         <p>       {{oneBottle.name}}</p>
@@ -48,15 +53,17 @@
       </li>
     </ul>
   </div>
-</div>
+</section>
 
 
 
-<div class="container2-fluid">
-  <h2> Beers </h2>
+<section class="container2-fluid">
+  <h2 class="title"> Beers </h2>
+  <hr>
+
   <div class="hah">
     <ul>
-      <h3> IPA's </h3>
+      <h3 class="title"> IPA's </h3>
       <li *ngFor='let oneBeer of ipaArray' class="liq">
         <!-- <img src="{{oneBeer.image}}"> -->
         <p>           {{oneBeer.name}} </p>
@@ -65,7 +72,7 @@
         <p> Brewed in {{oneBeer.country}} </p>
         <button class="add-to-cart" (click)="addToCart(oneBeer._id)">Add To Cart</button></li>
 
-      <h3> Lager's </h3>
+      <h3 class="title"> Lager's </h3>
       <li *ngFor='let oneBeer of lagerArray' class="liq">
         <!-- <img src="{{oneBeer.image}}"> -->
         <p>           {{oneBeer.name}}</p>
@@ -76,4 +83,4 @@
     </ul>
   </div>
 
-</div>
+</section>

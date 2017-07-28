@@ -1,32 +1,57 @@
 <app-home-page></app-home-page>
-<br>
-<div class="main-title">
-  <h2> Drinks on Demand </h2>
-  <p> Delivering the goods so the party goes on... </p>
-  <br>
 
-  <form (ngSubmit)="saveAddress()">
-    <button [routerLink]="['/register']"> Get Saucy </button>
-  </form>
+
+
+<div class="main-back">
+  <div class="main-title">
+      <hr>
+    <h2> Drinks on Demand </h2>
+    <p> Delivering the goods so the party goes on... </p>
+    <br>
+
+      <button class="saucy" [routerLink]="['/login']"> Get Saucy </button>
+      <hr>
+  </div>
 </div>
 
 
 
-<div class="bottom-cont">
+<section class="deets">
+  <div class="bottom-cont">
 
-  <div class="best">
-    <img>
-    <h3> <strong> Best Selection: </strong> Craft Beer and Spirits </h3>
+    <div class="best">
+      <img class="icons" src="../../assets/images/landing/select.png">
+      <h3> <strong> Best Selection: </strong> Craft Beer and Spirits </h3>
+    </div>
+
+    <div class="fast">
+      <img class="icons" src="../../assets/images/landing/fast.jpg">
+      <h3> Fast Delivery </h3>
+    </div>
+
+    <div class="minimum">
+      <img class="icons" src="../../assets/images/landing/min.jpg">
+      <h3> No Minimum! </h3>
+    </div>
   </div>
+</section>
 
-  <div class="fast">
-    <img>
-    <h3> Fast Delivery </h3>
+
+<section class="contact-back">
+  <div class="contact-us">
+    <h2> Contact Us </h2>
+    <br>
+    <form>
+      <label for="full-name-input"> Full Name: </label>
+      <input id="full-name-input" type="text" placeholder="Kevin Flynn"> <br><br>
+
+      <label for="email-input"> E-Mail: </label>
+      <input id="email-input" type="email" placeholder="flynn@tron.ru"> <br><br>
+
+      <label for="subject"> Message: </label>
+      <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+    </form>
+    <button class="cont-btn"> Submit </button>
+  <hr>
   </div>
-
-  <div class="minimum">
-    <img>
-    <h3> No Minimum! </h3>
-  </div>
-
-</div>
+</section>

@@ -2,3 +2,36 @@
   float: right;
   padding-top: 8px;
 }
+
+.nav-buttons:hover {
+  background-color: white;
+  color: white;
+}
+
+nav.navbar {
+  background-color: #2A2B2C;
+  width: 100%;
+  margin-bottom: 0 !important;
+  border-radius: 0 !important;
+  border: none !important;
+}
+
+.nav {
+  position: relative;
+  min-height: 50px;
+
+}
+
+img.navbar-brand {
+background-color: rgba(255, 255, 255, 0.2);
+height: 50px;
+padding-right: 20px;
+}
+
+img.cart-icon {
+  height: 40px;
+  background-color: rgba(255, 255, 255, 0.2);
+  position: relative;
+  top: 5px;
+
+}
