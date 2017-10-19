@@ -3,10 +3,14 @@
   padding-top: 8px;
 }
 
-.nav-buttons:hover {
-  background-color: white;
+.navbar-nav>li>a {
+  color: #5f9bf4;
+}
+
+.navbar-nav>li>a:hover {
   color: white;
 }
+
 
 nav.navbar {
   background-color: #2A2B2C;
@@ -23,15 +27,22 @@ nav.navbar {
 }
 
 img.navbar-brand {
-background-color: rgba(255, 255, 255, 0.2);
+background-color: rgba(255, 255, 255, 0.5);
 height: 50px;
 padding-right: 20px;
 }
 
+img.navbar-brand:hover {
+  background-color: #e7e7e7;
+}
+
 img.cart-icon {
   height: 40px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #2b2b2c;
   position: relative;
   top: 5px;
+}
 
+img.cart-icon:hover {
+  background-color: #e7e7e7;
 }

@@ -48,6 +48,9 @@
 #myDiv {
   display: none;
   text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  margin-bottom: 5%;
 }
 
 p.time {
@@ -58,22 +61,27 @@ h2 {
   color: green;
 }
 
-ul.ul{
+h2:hover {
+  color: white;
+}
+
+ol.ul{
   color: darkred;
+}
+
+ol.ul:hover {
+  color: white;
 }
 
 
 .map {
   width: 420px;
   height: 450px;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid green;
   padding: 20px;
   color: white;
-  position: relative;
-  left: 50px;
-  border-radius: 20px;
-
+  border-radius: 10px;
 }
 
 img.map-pic {
@@ -81,6 +89,7 @@ img.map-pic {
   height: 330px;
   padding-right: 35px;
 }
+
 
 hr {
   width: 400px;
@@ -91,22 +100,22 @@ h2.order {
 }
 
 .instructions {
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid green;
-  width: 500px;
-  height: 250px;
   float: right;
-  margin-top: -380px;
-  margin-right: 75px;
   color: white;
   text-align: left;
-  border-radius: 20px;
+  border-radius: 10px;
+  width: 500px;
+  height: 250px;
+  margin-top: -380px;
 }
+
 
 .order-comp {
   text-align: center;
 }
 
 li {
-  list-style: none;
+  list-style: upper-roman;
 }
