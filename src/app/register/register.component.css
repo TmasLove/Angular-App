@@ -1,12 +1,12 @@
 .signup-container {
   border: 1px solid black;
-  width: 400px;
-  height: 520px;
+  width: 32em;
+  height: 38em;
   text-align: center;
-  position: relative;
-  left: 500px;
-  padding-top: 20px;
-  top: 20px;
+  padding-top: 2em;
+  left: 35em;
+  top: 8em;
+  position: absolute;
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
   border-radius: 10px;
@@ -17,29 +17,43 @@ input.input {
 }
 
 form {
-  padding-top: 10px;
+  padding-top: 1em;
 }
 
 label {
-  padding-top: 30px;
+  padding-top: 2em;
 }
 
 .background {
   background-image: url('../../assets/images/pour.jpg');
   background-size: cover;
-  height: 50vw;
+  height: 48em;
 }
 
 button.signup {
   color: white;
   background-color: black;
-  margin-bottom: 10px;
+  margin-bottom: 2em;
   position: relative;
-  top: 8px;
+  top: 1em;
 }
 
 button.signup:hover {
   background-color: white;
   color: black;
+
+}
+
+
+/* media starts here */
+
+@media only screen and (max-width: 500px) {
+  .signup-container {
+    /* width: 40em; */
+
+  }
+
+
+
 
 }
