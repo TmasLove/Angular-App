@@ -172,7 +172,13 @@ img.icons {
 
 @media only screen and (max-width: 500px) {
   .main-back {
-    background-size: cover;
+    height: auto;
+    position: static;
+  }
+
+.main-title {
+  position: static;
+  width: auto;
   }
 
   section.deets {
@@ -191,7 +197,7 @@ img.icons {
   }
 
   .contact-us {
-    width: 70%;
-    margin-left: 4vh;
+    width: 80%;
+    margin-left: 6vh;
   }
 }

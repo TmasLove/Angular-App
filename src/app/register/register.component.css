@@ -48,11 +48,13 @@ button.signup:hover {
 /* media starts here */
 
 @media only screen and (max-width: 500px) {
-  .signup-container {
-    /* width: 40em; */
-
+  .background {
+    position: static;
   }
 
+  .signup-container {
+    float: left;
+  }
 
 
 

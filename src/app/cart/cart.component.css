@@ -51,3 +51,17 @@ li.cart {
 hr {
   width: 100px;
 }
+
+
+
+@media only screen and (max-width: 500px) {
+  .cart-back {
+    position: static;
+    width: 100%;
+  }
+
+  .cart-container {
+    width: 30%;
+    float: left;
+  }
+}
