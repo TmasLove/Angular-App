@@ -45,9 +45,9 @@ export class LoginComponent implements OnInit {
      })
      // alert('login submitted');
      .catch((err) => {
-       console.log("Failed");
        const parsedError = err.json();
        this.loginErrorMessage = parsedError.message
+       console.log("Failed :" + parsedError);
      });
    }
 
