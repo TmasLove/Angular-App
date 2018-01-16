@@ -11,7 +11,7 @@ export class AuthService {
  constructor(
     private httpThing: Http
   ) {
-
+    console.log(environment);
 
   }
 
