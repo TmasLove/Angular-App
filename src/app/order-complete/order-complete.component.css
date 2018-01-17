@@ -86,9 +86,8 @@ ol.ul:hover {
 }
 
 img.map-pic {
-  width: 400px;
-  height: 330px;
-  padding-right: 35px;
+  width: 23em;
+  height: 26em;
 }
 
 
@@ -127,6 +126,14 @@ li {
 @media only screen and (max-width: 500px) {
   .map {
     width: 85%;
-    left: 7%;
+    left: 5%;
+  }
+
+  img.map-pic {
+    width: 100%;
+  }
+
+  #myDiv.animate-bottom {
+    width: 100%;
   }
 }
