@@ -75,13 +75,14 @@ ol.ul:hover {
 
 
 .map {
-  width: 420px;
-  height: 450px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: 1px solid green;
+  width: 50%;
+  height: 35em;
+  background-color: rgba(0, 0, 0, 0.06);
   padding: 20px;
   color: white;
   border-radius: 10px;
+  position: absolute;
+  left: 26%;
 }
 
 img.map-pic {
@@ -99,7 +100,7 @@ h2.order {
   margin-left: 10px;
 }
 
-.instructions {
+/* .instructions {
   background-color: rgba(0, 0, 0, 0.2);
   border: 1px solid green;
   float: right;
@@ -109,7 +110,7 @@ h2.order {
   width: 500px;
   height: 250px;
   margin-top: -380px;
-}
+} */
 
 
 .order-comp {
@@ -118,4 +119,14 @@ h2.order {
 
 li {
   list-style: upper-roman;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+  .map {
+    width: 85%;
+    left: 7%;
+  }
 }
