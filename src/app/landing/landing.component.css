@@ -146,6 +146,7 @@ hr {
 button.cont-btn {
   background-color: black;
   color: white;
+  border: 1px solid rebeccapurple;
 }
 
 button.cont-btn:hover {
