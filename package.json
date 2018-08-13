@@ -33,15 +33,18 @@
     "hoek": "^5.0.4",
     "https-proxy-agent": "^2.2.1",
     "jquery": "^3.2.1",
+    "lodash": "^4.17.10",
     "mime": "^2.3.1",
     "moment": "^2.22.2",
     "ng-semantic": "^1.1.13",
     "ng2-bootstrap": "^1.6.3",
     "no-case": "^2.3.2",
+    "parsejson": "0.0.3",
     "primeng": "^4.1.1",
     "rxjs": "^5.4.1",
     "semantic-ui": "^2.2.11",
     "tough-cookie": "^2.4.3",
+    "url-parse": "^1.4.3",
     "zone.js": "^0.8.14"
   },
   "devDependencies": {
